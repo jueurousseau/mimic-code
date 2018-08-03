@@ -21,7 +21,25 @@ with t1 as
     225828, -- LR
     225944, -- Sterile Water
     225797  -- Free Water
-  )
+    ,
+	  225159, -- ;"NaCl 0.45%";"ml" -- Crystalloids
+	  225161, -- ;"NaCl 3% (Hypertonic Saline)";"ml" -- Crystalloids
+	  225823, -- ;"D5 1/2NS";"ml" -- Crystalloids
+	  225825, -- ;"D5NS";"ml" -- Crystalloids
+	  225827, -- ;"D5LR";"ml" -- Crystalloids
+	  225941, -- ;"D5 1/4NS";"ml" -- Crystalloids
+	  226089, -- ;"Piggyback";"ml" -- Crystalloids
+	  30015 -- "D5/.45NS" -- mixed colloids and crystalloids
+	  ,
+  1 30020, -- ;".45% Normal Saline";"ml" -- Crystalloids
+    30060, --;"D5NS";"ml" -- Crystalloids
+    30061, -- ;"D5RL";"ml" -- Crystalloids
+    30143, -- ;"3% Normal Saline";"ml" -- Crystalloids
+    30159, -- ;"D5 Ringers Lact.";"ml" -- Crystalloids
+    30160, -- ;"D5 Normal Saline";"ml" -- Crystalloids
+    30190, -- ;"NS .9%";"ml" -- Crystalloids
+    30015 -- "D5/.45NS" -- mixed colloids and crystalloids
+    )
   and mv.statusdescription != 'Rewritten'
   and
   -- in MetaVision, these ITEMIDs appear with a null rate IFF endtime=starttime + 1 minute
