@@ -28,6 +28,10 @@ with t1 as
     -- below ITEMIDs not in use
    -- 220861 | Albumin (Human) 20%
    -- 220863 | Albumin (Human) 4%
+    ,
+   220949, -- ;"Dextrose 5%";"ml" -- Colloids
+   220950, -- ;"Dextrose 10%";"ml" -- Colloids
+   220952 -- ;"Dextrose 50%";"ml" -- Colloids
   )
   and mv.statusdescription != 'Rewritten'
   and
@@ -72,6 +76,12 @@ with t1 as
   ,30011 -- Dextran 40
   ,30016 -- Dextrose 10%
   ,42731 -- Dextran40 10%
+  ,
+   30008, -- ;"Albumin 5%";"ml"
+   30016, -- ;"Dextrose 10%";"ml"
+   30187, -- ;"D10W";"ml"
+   30317, -- ;"D 12.5 W";"ml"
+   30318 --;"D15W";"ml"
   )
   and cv.amount > 100
   and cv.amount < 2000
